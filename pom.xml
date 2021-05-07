@@ -37,7 +37,7 @@
     <dependency>
       <groupId>io.github.zregvart</groupId>
       <artifactId>junit-github-reporter</artifactId>
-      <version>0.1.1</version>
+      <version>0.2.0</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
