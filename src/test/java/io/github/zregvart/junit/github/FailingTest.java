@@ -8,6 +8,6 @@ public class FailingTest {
 
     @Test
     void willFail() {
-        assertFalse(true);
+        assertFalse(true); // let's see the annotation here
     }
 }
