@@ -20,3 +20,7 @@ jobs:
           restore-keys: ${{ runner.os }}-maven-
       - name: Build and run tests
         run: ./mvnw --no-transfer-progress verify
+      - name: Test annotations
+        run: |
+          echo "::error file=io/github/zregvart/junit/github/FailingTest.java,line=1,col=0::FAILED - package + class.java"
+          echo "::error file=FailingTest.java,line=2,col=0::FAILED - class.java"
